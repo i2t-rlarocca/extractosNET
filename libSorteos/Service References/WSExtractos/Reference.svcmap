@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1a6f7896-c8f4-4de7-a453-a33445336226" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="2f595060-bc5d-4804-8d22-e6b0c2b347ab" SourceId="1" SourceUrl="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="5403d240-f70c-4033-a78d-e2fd3a4193f0" SourceId="1" SourceUrl="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="2896ef0a-6cb0-4074-ba57-e07ef9f363ba" SourceId="1" SourceUrl="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="01376542-5914-42cc-bc70-b1bedb150af7" SourceId="1" SourceUrl="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?disco" />
+    <MetadataFile FileName="ServicioExtracto.wsdl" MetadataType="Wsdl" ID="4822b914-8d39-4f89-889e-25b5a735fff5" SourceId="1" SourceUrl="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

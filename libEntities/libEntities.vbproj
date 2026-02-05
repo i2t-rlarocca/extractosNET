@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F059C7B4-8E5C-4F4C-A6F2-95932674D849}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>libEntities</RootNamespace>
+    <AssemblyName>libEntities</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>libEntities.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>libEntities.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autoridad.vb" />
+    <Compile Include="Cargo.vb" />
+    <Compile Include="cExtractoArchivoBoldt.vb" />
+    <Compile Include="cJuegoSorteo.vb" />
+    <Compile Include="cJuegosSorteo.vb" />
+    <Compile Include="Concurso.vb" />
+    <Compile Include="ConcursoJuego.vb" />
+    <Compile Include="cPestaniaExtracciones.vb" />
+    <Compile Include="cPestaniaExtraccionesLoteria.vb" />
+    <Compile Include="cPosicionValorLoterias.vb" />
+    <Compile Include="CriterioFinExtraccion.vb" />
+    <Compile Include="cUsuario.vb" />
+    <Compile Include="cValorPosicion.vb" />
+    <Compile Include="DiaSemana.vb" />
+    <Compile Include="EstadoPgmConcurso.vb" />
+    <Compile Include="ExtraccionesCAB.vb" />
+    <Compile Include="ExtraccionesDET.vb" />
+    <Compile Include="Extracto_qnl.vb" />
+    <Compile Include="extracto_qnl_letras.vb" />
+    <Compile Include="Juego.vb" />
+    <Compile Include="JuegoLoteria.vb" />
+    <Compile Include="Juego_Loteria.vb" />
+    <Compile Include="Loteria.vb" />
+    <Compile Include="Menu.vb" />
+    <Compile Include="MenuItem.vb" />
+    <Compile Include="MetodoIngreso.vb" />
+    <Compile Include="ModeloExtracciones.vb" />
+    <Compile Include="ModeloExtraccionesDet.vb" />
+    <Compile Include="OrdenEnExtracto.vb" />
+    <Compile Include="OrdenExtraccion.vb" />
+    <Compile Include="ParProxPozoEstimado.vb" />
+    <Compile Include="PgmConcurso.vb" />
+    <Compile Include="PgmSorteo.vb" />
+    <Compile Include="PgmSorteo_Autoridad.vb" />
+    <Compile Include="pgmSorteo_loteria.vb" />
+    <Compile Include="Pozo.vb" />
+    <Compile Include="Premio.vb" />
+    <Compile Include="Sorteo_Loteria.vb" />
+    <Compile Include="SrvFTP.vb" />
+    <Compile Include="Sueldo.vb" />
+    <Compile Include="TipoExtraccion.vb" />
+    <Compile Include="TipoTope.vb" />
+    <Compile Include="TipoValorExtraido.vb" />
+    <Compile Include="ListaOrdenada.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfExtracto" />
+  <xs:element name="ActualizarEstadoSorteo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="Sorteo" nillable="true" type="q1:pgmSorteoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarEstadoSorteoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActualizarEstadoSorteoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarParametrosSorteo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="Sorteo" nillable="true" type="q2:pgmSorteoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarParametrosSorteoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActualizarParametrosSorteoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPathExtracto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="Sorteo" nillable="true" type="q3:pgmSorteoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPathExtractoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObtenerPathExtractoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setExtracto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="extr" nillable="true" type="q4:Extracto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setExtractoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="setExtractoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarExtracto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="extr" nillable="true" type="q5:Extracto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarExtractoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="eliminarExtractoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarOAnularQuinielaSF">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="Sorteo" nillable="true" type="q6:pgmSorteoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarOAnularQuinielaSFResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmarOAnularQuinielaSFResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerAutoridadesArchivoBoldt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="Sorteo" nillable="true" type="q7:pgmSorteoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerAutoridadesArchivoBoldtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObtenerAutoridadesArchivoBoldtResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rePublicarExtracto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="extr" nillable="true" type="q8:Extracto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rePublicarExtractoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rePublicarExtractoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reAnularExtracto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfExtracto" minOccurs="0" name="extr" nillable="true" type="q9:Extracto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reAnularExtractoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="reAnularExtractoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

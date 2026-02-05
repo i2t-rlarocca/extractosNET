@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1EEFDFF-95E5-46A0-82FB-14E0114873FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sorteos</RootNamespace>
+    <AssemblyName>libSorteos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>libSorteos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>libSorteos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bussiness\ArchivoBoldtBO.vb" />
+    <Compile Include="Bussiness\AutoridadBO.vb" />
+    <Compile Include="Bussiness\CargoBO.vb" />
+    <Compile Include="Bussiness\ConcursoBO.vb" />
+    <Compile Include="Bussiness\ExtraccionesBO.vb" />
+    <Compile Include="Bussiness\GeneralBO.vb" />
+    <Compile Include="Bussiness\JuegoBO.vb" />
+    <Compile Include="Bussiness\LoteriaBO.vb" />
+    <Compile Include="Bussiness\MailBO.vb" />
+    <Compile Include="Bussiness\MenuBO.vb" />
+    <Compile Include="Bussiness\ParProxPozoEstimadoBO.vb" />
+    <Compile Include="Bussiness\PgmConcursoBO.vb" />
+    <Compile Include="Bussiness\PgmSorteoBO.vb" />
+    <Compile Include="Bussiness\pgmSorteoLoteriaBO.vb" />
+    <Compile Include="Bussiness\PozoBO.vb" />
+    <Compile Include="Bussiness\PremioBO.vb" />
+    <Compile Include="Bussiness\SueldoBO.vb" />
+    <Compile Include="Bussiness\UsuarioBO.vb" />
+    <Compile Include="Data\ArchivoBoldtDAL.vb" />
+    <Compile Include="Data\AutoridadDAL.vb" />
+    <Compile Include="Data\CargoDAL.vb" />
+    <Compile Include="Data\ConcursoDAL.vb" />
+    <Compile Include="Data\ExtraccionesDAL.vb" />
+    <Compile Include="Data\ExtraccionesLoteriaDAL.vb" />
+    <Compile Include="Data\GeneralDAL.vb" />
+    <Compile Include="Data\JuegoDAL.vb" />
+    <Compile Include="Data\LoteriaDAL.vb" />
+    <Compile Include="Data\MenuDal.vb" />
+    <Compile Include="Data\ModeloExtraccionesDAL.vb" />
+    <Compile Include="Data\ParProxPozoEstimadoDAL.vb" />
+    <Compile Include="Data\PgmConcursoDAL.vb" />
+    <Compile Include="Data\PgmSorteoDAL.vb" />
+    <Compile Include="Data\PgmSorteo_LoteriaDAL.vb" />
+    <Compile Include="Data\PozoDAL.vb" />
+    <Compile Include="Data\PremioDAL.vb" />
+    <Compile Include="Data\SueldoDAL.vb" />
+    <Compile Include="Data\usuarioDAL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\WSExtractos\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSCAS\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libEntities\libEntities.vbproj">
+      <Project>{F059C7B4-8E5C-4F4C-A6F2-95932674D849}</Project>
+      <Name>libEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libExtractos\libExtractos.vbproj">
+      <Project>{585A2DC2-553A-4BB3-930B-67DF30FF7FAB}</Project>
+      <Name>libExtractos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libHelpers\libHelpers.vbproj">
+      <Project>{E1141E4B-058E-4D28-BFE1-B3D0ACA3FBCB}</Project>
+      <Name>libHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libSeguridad\libSeguridad.vbproj">
+      <Project>{9AFA0444-CC80-4F0A-8BB6-12BA6D22AD39}</Project>
+      <Name>libSeguridad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSExtractos\Service.xsd" />
+    <None Include="Service References\WSExtractos\Service1.xsd" />
+    <None Include="Service References\WSExtractos\Service2.xsd" />
+    <None Include="Web References\WSCAS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSCAS\WSCAS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSCAS\</RelPath>
+      <UpdateFromURL>http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>libSorteos_WSCAS_Pgmsorteos</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WSExtractos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSExtractos\Service.disco" />
+    <None Include="Service References\WSExtractos\ServicioExtracto.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSExtractos\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSExtractos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

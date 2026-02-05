@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ServicioExtracto" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfExtracto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IExtractoServicio_ActualizarEstadoSorteo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoSorteo" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ActualizarEstadoSorteo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoSorteoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ActualizarParametrosSorteo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarParametrosSorteo" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ActualizarParametrosSorteo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarParametrosSorteoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ObtenerPathExtracto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPathExtracto" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ObtenerPathExtracto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPathExtractoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_setExtracto_InputMessage">
+    <wsdl:part name="parameters" element="tns:setExtracto" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_setExtracto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setExtractoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_eliminarExtracto_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarExtracto" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_eliminarExtracto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarExtractoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ConfirmarOAnularQuinielaSF_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarOAnularQuinielaSF" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ConfirmarOAnularQuinielaSF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarOAnularQuinielaSFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ObtenerAutoridadesArchivoBoldt_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAutoridadesArchivoBoldt" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_ObtenerAutoridadesArchivoBoldt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAutoridadesArchivoBoldtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_rePublicarExtracto_InputMessage">
+    <wsdl:part name="parameters" element="tns:rePublicarExtracto" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_rePublicarExtracto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rePublicarExtractoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_reAnularExtracto_InputMessage">
+    <wsdl:part name="parameters" element="tns:reAnularExtracto" />
+  </wsdl:message>
+  <wsdl:message name="IExtractoServicio_reAnularExtracto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:reAnularExtractoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IExtractoServicio">
+    <wsdl:operation name="ActualizarEstadoSorteo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/ActualizarEstadoSorteo" message="tns:IExtractoServicio_ActualizarEstadoSorteo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/ActualizarEstadoSorteoResponse" message="tns:IExtractoServicio_ActualizarEstadoSorteo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarParametrosSorteo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/ActualizarParametrosSorteo" message="tns:IExtractoServicio_ActualizarParametrosSorteo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/ActualizarParametrosSorteoResponse" message="tns:IExtractoServicio_ActualizarParametrosSorteo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPathExtracto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/ObtenerPathExtracto" message="tns:IExtractoServicio_ObtenerPathExtracto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/ObtenerPathExtractoResponse" message="tns:IExtractoServicio_ObtenerPathExtracto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setExtracto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/setExtracto" message="tns:IExtractoServicio_setExtracto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/setExtractoResponse" message="tns:IExtractoServicio_setExtracto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarExtracto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/eliminarExtracto" message="tns:IExtractoServicio_eliminarExtracto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/eliminarExtractoResponse" message="tns:IExtractoServicio_eliminarExtracto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarOAnularQuinielaSF">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/ConfirmarOAnularQuinielaSF" message="tns:IExtractoServicio_ConfirmarOAnularQuinielaSF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/ConfirmarOAnularQuinielaSFResponse" message="tns:IExtractoServicio_ConfirmarOAnularQuinielaSF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAutoridadesArchivoBoldt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/ObtenerAutoridadesArchivoBoldt" message="tns:IExtractoServicio_ObtenerAutoridadesArchivoBoldt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/ObtenerAutoridadesArchivoBoldtResponse" message="tns:IExtractoServicio_ObtenerAutoridadesArchivoBoldt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rePublicarExtracto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/rePublicarExtracto" message="tns:IExtractoServicio_rePublicarExtracto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/rePublicarExtractoResponse" message="tns:IExtractoServicio_rePublicarExtracto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="reAnularExtracto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtractoServicio/reAnularExtracto" message="tns:IExtractoServicio_reAnularExtracto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtractoServicio/reAnularExtractoResponse" message="tns:IExtractoServicio_reAnularExtracto_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IExtractoServicio" type="tns:IExtractoServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ActualizarEstadoSorteo">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/ActualizarEstadoSorteo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarParametrosSorteo">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/ActualizarParametrosSorteo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPathExtracto">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/ObtenerPathExtracto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setExtracto">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/setExtracto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarExtracto">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/eliminarExtracto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarOAnularQuinielaSF">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/ConfirmarOAnularQuinielaSF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAutoridadesArchivoBoldt">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/ObtenerAutoridadesArchivoBoldt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rePublicarExtracto">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/rePublicarExtracto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reAnularExtracto">
+      <soap:operation soapAction="http://tempuri.org/IExtractoServicio/reAnularExtracto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioExtracto">
+    <wsdl:port name="BasicHttpBinding_IExtractoServicio" binding="tns:BasicHttpBinding_IExtractoServicio">
+      <soap:address location="http://sorteo.iafas.gov.ar/WSExtractosIAFAS/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfExtracto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfExtracto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="pgmSorteoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConfirmadoParcial" type="xs:boolean" />
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaHoraCaducidadSorteo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaHoraFin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaHoraInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaHoraProximoSorteo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaHoraSorteo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="juego" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="loteria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero" type="xs:int" />
+      <xs:element minOccurs="0" name="pozoProximoEstimado" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pgmSorteoDto" nillable="true" type="tns:pgmSorteoDto" />
+  <xs:complexType name="Extracto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Autoridad_1" nillable="true" type="tns:Autoridad" />
+      <xs:element minOccurs="0" name="Autoridad_2" nillable="true" type="tns:Autoridad" />
+      <xs:element minOccurs="0" name="Autoridad_3" nillable="true" type="tns:Autoridad" />
+      <xs:element minOccurs="0" name="Autoridad_4" nillable="true" type="tns:Autoridad" />
+      <xs:element minOccurs="0" name="Autoridad_5" nillable="true" type="tns:Autoridad" />
+      <xs:element minOccurs="0" name="Cifras" type="xs:int" />
+      <xs:element minOccurs="0" name="ConfirmadoParcial" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FechaHoraCaducidad" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaHoraProximo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaHoraSorteo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Juego" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Letra_1" nillable="true" type="tns:Letra" />
+      <xs:element minOccurs="0" name="Letra_2" nillable="true" type="tns:Letra" />
+      <xs:element minOccurs="0" name="Letra_3" nillable="true" type="tns:Letra" />
+      <xs:element minOccurs="0" name="Letra_4" nillable="true" type="tns:Letra" />
+      <xs:element minOccurs="0" name="Localidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Loteria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MinimosAsegurados" nillable="true" type="tns:ArrayOfMinimoAsegurado" />
+      <xs:element minOccurs="0" name="NumeroSorteo" type="xs:int" />
+      <xs:element minOccurs="0" name="Numero_1" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_10" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_11" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_12" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_13" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_14" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_15" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_16" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_17" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_18" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_19" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_2" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_20" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_21" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_22" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_23" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_24" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_25" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_26" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_27" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_28" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_29" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_3" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_30" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_31" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_32" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_33" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_34" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_35" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_36" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_4" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_5" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_6" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_7" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_8" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="Numero_9" nillable="true" type="tns:Numero" />
+      <xs:element minOccurs="0" name="PozoProxEstimado" type="xs:long" />
+      <xs:element minOccurs="0" name="Premio_1" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_10" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_11" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_12" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_13" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_14" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_15" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_16" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_17" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_18" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_19" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_2" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_20" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_3" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_4" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_5" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_6" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_7" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_8" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="Premio_9" nillable="true" type="tns:Premio" />
+      <xs:element minOccurs="0" name="bri_CantSueldo" type="xs:int" />
+      <xs:element minOccurs="0" name="bri_HaySueldo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="bri_Pozo" type="xs:long" />
+      <xs:element minOccurs="0" name="bri_PozoEstimado" type="xs:long" />
+      <xs:element minOccurs="0" name="bri_Sueldo_1" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_10" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_2" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_3" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_4" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_5" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_6" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_7" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_8" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="bri_Sueldo_9" nillable="true" type="tns:Sueldo" />
+      <xs:element minOccurs="0" name="eqc_Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estadoSorteo" type="xs:int" />
+      <xs:element minOccurs="0" name="exporto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lo_Progresion" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_1aprox1" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_1aprox2" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_1aprox3" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_1aprox4" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_2aprox1" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_2aprox2" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_2aprox3" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_3aprox1" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_3aprox2" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_3aprox3" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_4aprox2" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_4aprox3" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_5aprox2" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_5aprox3" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_extra" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_fecprox" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="lo_exj_imp1" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_imp2" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_imp3" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_imp4" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_imp5" type="xs:double" />
+      <xs:element minOccurs="0" name="lo_exj_sorprox" type="xs:int" />
+      <xs:element minOccurs="0" name="po_valorApuesta" type="xs:double" />
+      <xs:element minOccurs="0" name="qni_canasta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="qni_mensaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="qnl_FecEntDesde" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="qnl_FecEntHasta" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="qnl_FecPrxDesde" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="qnl_FecPrxHasta" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="qnl_PremioAge" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="qnl_PremioAge2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="qnl_PremioEst" type="xs:int" />
+      <xs:element minOccurs="0" name="qnl_PremioEst2" type="xs:int" />
+      <xs:element minOccurs="0" name="qnl_Region" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="qnl_Region2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Extracto" nillable="true" type="tns:Extracto" />
+  <xs:complexType name="Autoridad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Firma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Autoridad" nillable="true" type="tns:Autoridad" />
+  <xs:complexType name="Letra">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Numero">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Letra" nillable="true" type="tns:Letra" />
+  <xs:complexType name="Numero">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Posicion" type="xs:int" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Numero" nillable="true" type="tns:Numero" />
+  <xs:complexType name="ArrayOfMinimoAsegurado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MinimoAsegurado" nillable="true" type="tns:MinimoAsegurado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMinimoAsegurado" nillable="true" type="tns:ArrayOfMinimoAsegurado" />
+  <xs:complexType name="MinimoAsegurado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaHoraCarga" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Importe" type="xs:double" />
+      <xs:element minOccurs="0" name="NroSorteodesde" type="xs:int" />
+      <xs:element minOccurs="0" name="Usuariocargar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValorApuesta" type="xs:double" />
+      <xs:element minOccurs="0" name="idJuego" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idModalidad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MinimoAsegurado" nillable="true" type="tns:MinimoAsegurado" />
+  <xs:complexType name="Premio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aciertos" type="xs:int" />
+      <xs:element minOccurs="0" name="CuponesGanadores" type="xs:int" />
+      <xs:element minOccurs="0" name="Pozo" type="xs:double" />
+      <xs:element minOccurs="0" name="Premio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PremioPorCupon" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Premio" nillable="true" type="tns:Premio" />
+  <xs:complexType name="Sueldo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Agencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Localidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Orden" type="xs:int" />
+      <xs:element minOccurs="0" name="Provincia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ticket" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sueldo" nillable="true" type="tns:Sueldo" />
+</xs:schema>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://172.24.72.179/soap/Pgmsorteos" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://172.24.72.179/soap/Pgmsorteos" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://172.24.72.179/soap/Pgmsorteos">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getpgmsorteosRequest">
+    <wsdl:part name="name" type="xsd:string" />
+    <wsdl:part name="origen" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="getpgmsorteosResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getpremiosRequest">
+    <wsdl:part name="name" type="xsd:string" />
+    <wsdl:part name="origen" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="getpremiosResponse">
+    <wsdl:part name="respuesta" type="xsd:Array" />
+  </wsdl:message>
+  <wsdl:message name="setsorteadoRequest">
+    <wsdl:part name="name" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setsorteadoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getPDFRequest">
+    <wsdl:part name="juego" type="xsd:integer" />
+    <wsdl:part name="sorteo" type="xsd:integer" />
+    <wsdl:part name="origen" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="getPDFResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getlineascontrolRequest">
+    <wsdl:part name="name" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getlineascontrolResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getlineasextractoRequest">
+    <wsdl:part name="name" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getlineasextractoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getpozosRequest">
+    <wsdl:part name="name" type="xsd:string" />
+    <wsdl:part name="origen" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="getpozosResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getpozoestimadoRequest">
+    <wsdl:part name="name" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getpozoestimadoResponse">
+    <wsdl:part name="respuesta" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setExtractoQn6BrRequest">
+    <wsdl:part name="juego" type="xsd:integer" />
+    <wsdl:part name="sorteo" type="xsd:integer" />
+    <wsdl:part name="loteria" type="xsd:integer" />
+    <wsdl:part name="extracto" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setExtractoQn6BrResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setExtractoQnlRequest">
+    <wsdl:part name="juego" type="xsd:integer" />
+    <wsdl:part name="sorteo" type="xsd:integer" />
+    <wsdl:part name="loteria" type="xsd:integer" />
+    <wsdl:part name="extracto" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setExtractoQnlResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setExtractoTomRequest">
+    <wsdl:part name="juego" type="xsd:integer" />
+    <wsdl:part name="sorteo" type="xsd:integer" />
+    <wsdl:part name="loteria" type="xsd:integer" />
+    <wsdl:part name="extracto" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setExtractoTomResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="PgmsorteosPortType">
+    <wsdl:operation name="getpgmsorteos">
+      <documentation>obtiene pgmsorteo</documentation>
+      <wsdl:input message="tns:getpgmsorteosRequest" />
+      <wsdl:output message="tns:getpgmsorteosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getpremios">
+      <documentation>obtiene premios</documentation>
+      <wsdl:input message="tns:getpremiosRequest" />
+      <wsdl:output message="tns:getpremiosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setsorteado">
+      <documentation>actualiza campo sorteado de pgmsorteo</documentation>
+      <wsdl:input message="tns:setsorteadoRequest" />
+      <wsdl:output message="tns:setsorteadoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPDF">
+      <documentation>Obtiene PDF desde el WS</documentation>
+      <wsdl:input message="tns:getPDFRequest" />
+      <wsdl:output message="tns:getPDFResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getlineascontrol">
+      <documentation>obtiene lineas del archivo de control</documentation>
+      <wsdl:input message="tns:getlineascontrolRequest" />
+      <wsdl:output message="tns:getlineascontrolResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getlineasextracto">
+      <documentation>obtiene las lineas del archivo de extracto</documentation>
+      <wsdl:input message="tns:getlineasextractoRequest" />
+      <wsdl:output message="tns:getlineasextractoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getpozos">
+      <documentation>obtiene pozos</documentation>
+      <wsdl:input message="tns:getpozosRequest" />
+      <wsdl:output message="tns:getpozosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getpozoestimado">
+      <documentation>obtiene pozo estimado del archivo de premios</documentation>
+      <wsdl:input message="tns:getpozoestimadoRequest" />
+      <wsdl:output message="tns:getpozoestimadoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setExtractoQn6Br">
+      <documentation>Informa extracto de QUINI 6 o BRINCO.</documentation>
+      <wsdl:input message="tns:setExtractoQn6BrRequest" />
+      <wsdl:output message="tns:setExtractoQn6BrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setExtractoQnl">
+      <documentation>Informa extracto de QUINIELAS y LOTERIA.</documentation>
+      <wsdl:input message="tns:setExtractoQnlRequest" />
+      <wsdl:output message="tns:setExtractoQnlResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setExtractoTom">
+      <documentation>Informa extracto de TOMBOLA y POCEADA FEDERAL.</documentation>
+      <wsdl:input message="tns:setExtractoTomRequest" />
+      <wsdl:output message="tns:setExtractoTomResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PgmsorteosBinding" type="tns:PgmsorteosPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getpgmsorteos">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/getpgmsorteos" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getpremios">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/getpremios" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setsorteado">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/setsorteado" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPDF">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/getPDF" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlineascontrol">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/getlineascontrol" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlineasextracto">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/getlineasextracto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getpozos">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/getpozos" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getpozoestimado">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/getpozoestimado" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setExtractoQn6Br">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/setExtractoQn6Br" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setExtractoQnl">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/setExtractoQnl" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setExtractoTom">
+      <soap:operation soapAction="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php/setExtractoTom" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.127.77/cas/WS_sorteos_CAS" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Pgmsorteos">
+    <wsdl:port name="PgmsorteosPort" binding="tns:PgmsorteosBinding">
+      <soap:address location="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

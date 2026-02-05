@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{585A2DC2-553A-4BB3-930B-67DF30FF7FAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sorteos.Extractos</RootNamespace>
+    <AssemblyName>libExtractos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>libExtractos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>libExtractos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\crystal\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\crystal\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bussiness\ExtractoBrinco.vb" />
+    <Compile Include="Bussiness\ExtractoLoteria.vb" />
+    <Compile Include="Bussiness\ExtractoLoteriaChica.vb" />
+    <Compile Include="Bussiness\ExtractoPoceada.vb" />
+    <Compile Include="Bussiness\ExtractoQuini6.vb" />
+    <Compile Include="Bussiness\ExtractoQuiniela.vb" />
+    <Compile Include="Bussiness\ExtractoReporte.vb" />
+    <Compile Include="Bussiness\ExtractoTombola.vb" />
+    <Compile Include="Bussiness\FileSystemHelperE.vb" />
+    <Compile Include="Bussiness\JuegoBO.vb" />
+    <Compile Include="Bussiness\Listado.vb" />
+    <Compile Include="Bussiness\Sorteo.vb" />
+    <Compile Include="Data\Autoridad.vb" />
+    <Compile Include="Data\Extracto.vb" />
+    <Compile Include="Data\ExtractoBrinco.vb" />
+    <Compile Include="Data\ExtractoLoteria.vb" />
+    <Compile Include="Data\ExtractoLoteriaChica.vb" />
+    <Compile Include="Data\ExtractoPoceada.vb" />
+    <Compile Include="Data\ExtractoQuini6.vb" />
+    <Compile Include="Data\ExtractoQuiniela.vb" />
+    <Compile Include="Data\ExtractoTombola.vb" />
+    <Compile Include="Data\GeneralE.vb" />
+    <Compile Include="Data\Juego.vb" />
+    <Compile Include="Data\Loteria.vb" />
+    <Compile Include="Data\ModalidadJuego.vb" />
+    <Compile Include="Data\Sorteo.vb" />
+    <Compile Include="Data\Valor.vb" />
+    <Compile Include="Entities\Autoridad.vb" />
+    <Compile Include="Entities\CuponGanador.vb" />
+    <Compile Include="Entities\Extracto.vb" />
+    <Compile Include="Entities\ExtractoBrinco.vb" />
+    <Compile Include="Entities\ExtractoLoteria.vb" />
+    <Compile Include="Entities\ExtractoLoteriaChica.vb" />
+    <Compile Include="Entities\ExtractoPoceada.vb" />
+    <Compile Include="Entities\ExtractoQuini6.vb" />
+    <Compile Include="Entities\ExtractoQuiniela.vb" />
+    <Compile Include="Entities\ExtractoTombola.vb" />
+    <Compile Include="Entities\Juego.vb" />
+    <Compile Include="Entities\JuegoLoteria.vb" />
+    <Compile Include="Entities\Localidad.vb" />
+    <Compile Include="Entities\Loteria.vb" />
+    <Compile Include="Entities\ModalidadJuego.vb" />
+    <Compile Include="Entities\Numero.vb" />
+    <Compile Include="Entities\Premio.vb" />
+    <Compile Include="Entities\Sorteo.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libHelpers\libHelpers.vbproj">
+      <Project>{E1141E4B-058E-4D28-BFE1-B3D0ACA3FBCB}</Project>
+      <Name>libHelpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extracto_PDF\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

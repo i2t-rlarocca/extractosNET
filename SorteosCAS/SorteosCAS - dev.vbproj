@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B89B179-7C94-400C-8493-5C2DA427C5F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SorteosCAS.My.MyApplication</StartupObject>
+    <RootNamespace>SorteosCAS</RootNamespace>
+    <AssemblyName>SorteosCAS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SorteosCAS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SorteosCAS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC\CrystalDecisions.Enterprise.Framework\12.0.1100.0__692fbea5521e1304\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC\CrystalDecisions.Enterprise.InfoStore\12.0.1100.0__692fbea5521e1304\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="color2.vb" />
+    <Compile Include="ConcursoExtracciones.Designer.vb">
+      <DependentUpon>ConcursoExtracciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConcursoExtracciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConcursoInicio.Designer.vb">
+      <DependentUpon>ConcursoInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConcursoInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConcursoInicioParametros.Designer.vb">
+      <DependentUpon>ConcursoInicioParametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConcursoInicioParametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtraccionesJurisdicciones2.Designer.vb">
+      <DependentUpon>frmExtraccionesJurisdicciones2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtraccionesJurisdicciones2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametrosPozoEstimadoBR.Designer.vb">
+      <DependentUpon>frmParametrosPozoEstimadoBR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametrosPozoEstimadoBR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMensajeConfirmacionReversion.Designer.vb">
+      <DependentUpon>FrmMensajeConfirmacionReversion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMensajeConfirmacionReversion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmcontingenciaWS.Designer.vb">
+      <DependentUpon>FrmcontingenciaWS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmcontingenciaWS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnviarMailExtracto.Designer.vb">
+      <DependentUpon>frmEnviarMailExtracto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnviarMailExtracto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnularSorteo.Designer.vb">
+      <DependentUpon>FrmAnularSorteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnularSorteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambioPWD.designer.vb">
+      <DependentUpon>FrmCambioPWD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambioPWD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutoridadABM.Designer.vb">
+      <DependentUpon>frmAutoridadABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutoridadABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConcursoFinalizar.Designer.vb">
+      <DependentUpon>FrmConcursoFinalizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConcursoFinalizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmacionRevertir.Designer.vb">
+      <DependentUpon>frmConfirmacionRevertir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmacionRevertir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneracionExtractoBoldt.Designer.vb">
+      <DependentUpon>frmGeneracionExtractoBoldt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeneracionExtractoBoldt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImprimirListados.Designer.vb">
+      <DependentUpon>FrmImprimirListados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImprimirListados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.vb">
+      <DependentUpon>Frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMensajeComparacionExtractos.Designer.vb">
+      <DependentUpon>FrmMensajeComparacionExtractos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMensajeComparacionExtractos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObtenerPgmSorteo.Designer.vb">
+      <DependentUpon>frmObtenerPgmSorteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmObtenerPgmSorteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtrasJurisdiccionesABM.Designer.vb">
+      <DependentUpon>FrmOtrasJurisdiccionesABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtrasJurisdiccionesABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametrosPozoEstimadoQ6.Designer.vb">
+      <DependentUpon>frmParametrosPozoEstimadoQ6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametrosPozoEstimadoQ6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPozoSugerido.Designer.vb">
+      <DependentUpon>frmPozoSugerido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPozoSugerido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPremios.Designer.vb">
+      <DependentUpon>frmPremios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPremios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublicarSorteo.designer.vb">
+      <DependentUpon>frmPublicarSorteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublicarSorteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerarArchivoExtracto.Designer.vb">
+      <DependentUpon>frmGenerarArchivoExtracto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerarArchivoExtracto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imagenes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imagenes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MDIContenedor.Designer.vb">
+      <DependentUpon>MDIContenedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIContenedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mensajes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PremioExtra.Designer.vb">
+      <DependentUpon>PremioExtra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PremioExtra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service References\WSExtractos\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSCAS\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConcursoExtracciones.resx">
+      <DependentUpon>ConcursoExtracciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConcursoInicio.resx">
+      <DependentUpon>ConcursoInicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConcursoInicioParametros.resx">
+      <DependentUpon>ConcursoInicioParametros.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtraccionesJurisdicciones2.resx">
+      <DependentUpon>frmExtraccionesJurisdicciones2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametrosPozoEstimadoBR.resx">
+      <DependentUpon>frmParametrosPozoEstimadoBR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMensajeConfirmacionReversion.resx">
+      <DependentUpon>FrmMensajeConfirmacionReversion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmcontingenciaWS.resx">
+      <DependentUpon>FrmcontingenciaWS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnviarMailExtracto.resx">
+      <DependentUpon>frmEnviarMailExtracto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnularSorteo.resx">
+      <DependentUpon>FrmAnularSorteo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambioPWD.resx">
+      <DependentUpon>FrmCambioPWD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAutoridadABM.resx">
+      <DependentUpon>frmAutoridadABM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConcursoFinalizar.resx">
+      <DependentUpon>FrmConcursoFinalizar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmacionRevertir.resx">
+      <DependentUpon>frmConfirmacionRevertir.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneracionExtractoBoldt.resx">
+      <DependentUpon>frmGeneracionExtractoBoldt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImprimirListados.resx">
+      <DependentUpon>FrmImprimirListados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMensajeComparacionExtractos.resx">
+      <DependentUpon>FrmMensajeComparacionExtractos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObtenerPgmSorteo.resx">
+      <DependentUpon>frmObtenerPgmSorteo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtrasJurisdiccionesABM.resx">
+      <DependentUpon>FrmOtrasJurisdiccionesABM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametrosPozoEstimadoQ6.resx">
+      <DependentUpon>frmParametrosPozoEstimadoQ6.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPozoSugerido.resx">
+      <DependentUpon>frmPozoSugerido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPremios.resx">
+      <DependentUpon>frmPremios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublicarSorteo.resx">
+      <DependentUpon>frmPublicarSorteo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerarArchivoExtracto.resx">
+      <DependentUpon>frmGenerarArchivoExtracto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Imagenes.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIContenedor.resx">
+      <DependentUpon>MDIContenedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mensajes.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PremioExtra.resx">
+      <DependentUpon>PremioExtra.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libEntities\libEntities.vbproj">
+      <Project>{F059C7B4-8E5C-4F4C-A6F2-95932674D849}</Project>
+      <Name>libEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libExtractos\libExtractos.vbproj">
+      <Project>{585A2DC2-553A-4BB3-930B-67DF30FF7FAB}</Project>
+      <Name>libExtractos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libHelpers\libHelpers.vbproj">
+      <Project>{E1141E4B-058E-4D28-BFE1-B3D0ACA3FBCB}</Project>
+      <Name>libHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libSeguridad\libSeguridad.vbproj">
+      <Project>{9AFA0444-CC80-4F0A-8BB6-12BA6D22AD39}</Project>
+      <Name>libSeguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libSorteos\libSorteos.vbproj">
+      <Project>{F1EEFDFF-95E5-46A0-82FB-14E0114873FB}</Project>
+      <Name>libSorteos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Publicador\Publicador.vbproj">
+      <Project>{C13F8066-6FD9-4623-BE68-1B2BDD467711}</Project>
+      <Name>Publicador</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barraConcursoFinalizar.JPG" />
+    <Content Include="Resources\BarraTitulo.png" />
+    <None Include="app.config" />
+    <None Include="Resources\BolitasQuini4.jpg" />
+    <Content Include="Resources\bordeinferior.gif" />
+    <Content Include="Resources\BordeInferior.png" />
+    <Content Include="Resources\BordeInferiorDerecho.png" />
+    <Content Include="Resources\bordeInferiorIzquierdo.png" />
+    <Content Include="Resources\BordeLateral.png" />
+    <Content Include="Resources\BordeSupDerecho.png" />
+    <Content Include="Resources\BordeSuperiorDerecho.png" />
+    <Content Include="Resources\BordeSuperiorIzquierdo.png" />
+    <Content Include="Resources\BordeSupIzquierdo.png" />
+    <None Include="Resources\botonseleccionado.gif" />
+    <None Include="Resources\botonOver.jpg" />
+    <Content Include="Resources\boton_ingresar.gif" />
+    <Content Include="Resources\boton_ingresar_mouse over.gif" />
+    <None Include="Resources\boton_ingresar_seleccionado.GIF" />
+    <None Include="Resources\boton_off.png" />
+    <None Include="Resources\boton_over.png" />
+    <None Include="Resources\boton_press.png" />
+    <None Include="Resources\boton_normal.png" />
+    <Content Include="Resources\boton_salir.gif" />
+    <Content Include="Resources\boton_salir_mouse over.gif" />
+    <Content Include="Resources\BtnClose.png" />
+    <Content Include="Resources\BtnCloseOver.png" />
+    <Content Include="Resources\BtnMaximize.png" />
+    <Content Include="Resources\BtnMaximizeOver.png" />
+    <Content Include="Resources\BtnMinimize.png" />
+    <Content Include="Resources\BtnMinimizeOver.png" />
+    <Content Include="Resources\calendario.bmp" />
+    <None Include="Resources\CANCELAR.png" />
+    <None Include="Resources\campovalores.png" />
+    <None Include="Resources\campovaloresValor.JPG" />
+    <None Include="Resources\campovaloresHora.JPG" />
+    <None Include="Resources\campovaloresValorRepetido.JPG" />
+    <None Include="Resources\campovaloresHoraRepetido.JPG" />
+    <None Include="Resources\campovaloresRepetido.JPG" />
+    <Content Include="Resources\ckecked.bmp" />
+    <Content Include="Resources\cuadrado.png" />
+    <Content Include="Resources\cuadradoseleccionado.png" />
+    <Content Include="Resources\DELETE.png" />
+    <Content Include="Resources\DOWN.png" />
+    <Content Include="Resources\Eliminado.ico" />
+    <Content Include="Resources\engranajes.jpg" />
+    <None Include="Resources\fin_normal.png" />
+    <None Include="Resources\fin_off.png" />
+    <None Include="Resources\fin_over.png" />
+    <None Include="Resources\fin_press.png" />
+    <None Include="Resources\fin_sel.png" />
+    <Content Include="Resources\flechaabajo.png" />
+    <Content Include="Resources\flechaabajogris.png" />
+    <Content Include="Resources\flechacostado.png" />
+    <Content Include="Resources\flechacostadogris.png" />
+    <None Include="Resources\fondo1sinbarras.jpg" />
+    <None Include="Resources\fondo1sinbarras4.PNG" />
+    <Content Include="Resources\FondoBoton.JPG" />
+    <None Include="Resources\FondoBoton2.JPG" />
+    <None Include="Resources\fondoIniciomasbarras.jpg" />
+    <None Include="Resources\fondoExtraccionesmasbarras.JPG" />
+    <None Include="Resources\fondoExtraccionesLoteria.JPG" />
+    <None Include="Resources\fondoExtraccionesLoterias.JPG" />
+    <Content Include="Resources\fondoLiso.jpg" />
+    <Content Include="Resources\fondoLisoConBarra.jpg" />
+    <Content Include="Resources\FondoLogin.gif" />
+    <Content Include="Resources\Full screen.ico" />
+    <Content Include="Resources\icalicon.png" />
+    <Content Include="Resources\icono.ico" />
+    <Content Include="Resources\IconoEjecutar.ico" />
+    <Content Include="Resources\IconoError.ico" />
+    <Content Include="Resources\IconoOk.ico" />
+    <Content Include="Resources\IconoTipoEquipo.ico" />
+    <Content Include="Resources\IconoVacio.ico" />
+    <Content Include="Resources\IconoWaitCursor.ico" />
+    <Content Include="Resources\ImagenAceptar.png" />
+    <Content Include="Resources\ImagenBuscar.png" />
+    <Content Include="Resources\ImagenEjecutar.png" />
+    <Content Include="Resources\ImagenImprimir.png" />
+    <Content Include="Resources\ImagenLimpiar.png" />
+    <None Include="Resources\imp_normal.png" />
+    <None Include="Resources\imp_off.png" />
+    <None Include="Resources\imp_over.png" />
+    <None Include="Resources\imp_press.png" />
+    <None Include="Resources\imp_sel.png" />
+    <None Include="Resources\inicio_normal.png" />
+    <None Include="Resources\inicio_off.png" />
+    <None Include="Resources\inicio_over.png" />
+    <None Include="Resources\inicio_press.png" />
+    <None Include="Resources\inicio_sel.png" />
+    <None Include="Resources\jur_normal.png" />
+    <None Include="Resources\jur_off.png" />
+    <None Include="Resources\jur_over.png" />
+    <None Include="Resources\jur_press.png" />
+    <None Include="Resources\jur_sel.png" />
+    <None Include="Resources\Interfaces_normal.PNG" />
+    <None Include="Resources\Interfaces_off.PNG" />
+    <None Include="Resources\Interfaces_over.PNG" />
+    <None Include="Resources\Interfaces_press.PNG" />
+    <Content Include="Resources\loading2.gif" />
+    <None Include="Resources\mascota_quini62.jpg" />
+    <None Include="Resources\LogoLoteria.png" />
+    <Content Include="Resources\maximize1.jpg" />
+    <Content Include="Resources\Mensaje_Advertencia.png" />
+    <Content Include="Resources\Mensaje_Error.png" />
+    <Content Include="Resources\Mensaje_Info.png" />
+    <Content Include="Resources\Mensaje_Pregunta.png" />
+    <Content Include="Resources\minimize1.jpg" />
+    <Content Include="Resources\Modificado.ico" />
+    <Content Include="Resources\Nuevo.ico" />
+    <Content Include="Resources\PasoFabricacion.png" />
+    <Content Include="Resources\PasoProcesoFabricacion.png" />
+    <None Include="Resources\premios_normal.png" />
+    <None Include="Resources\premios_off.png" />
+    <None Include="Resources\premios_over.png" />
+    <None Include="Resources\premios_press.png" />
+    <None Include="Resources\premios_sel.png" />
+    <Content Include="Resources\Proceso.ico" />
+    <Content Include="Resources\ProcesoFabricacion.png" />
+    <Content Include="Resources\ProcesoFabricacionForaneo.png" />
+    <Content Include="Resources\Producto.png" />
+    <None Include="Resources\pub_extension.png" />
+    <None Include="Resources\pub_normal.png" />
+    <None Include="Resources\pub_off.png" />
+    <None Include="Resources\pub_over.png" />
+    <None Include="Resources\pub_press.png" />
+    <None Include="Resources\pub_sel.png" />
+    <Content Include="Resources\resultset_next.ico" />
+    <Content Include="Resources\resultset_previous.ico" />
+    <Content Include="Resources\Sin Cambios.ico" />
+    <Content Include="Resources\Skin_Border.png" />
+    <Content Include="Resources\Skin_Close.png" />
+    <Content Include="Resources\Skin_CloseDisabled.png" />
+    <Content Include="Resources\Skin_CloseHot.png" />
+    <Content Include="Resources\Skin_ClosePressed.png" />
+    <Content Include="Resources\Skin_Maximize.png" />
+    <Content Include="Resources\Skin_MaximizeDisabled.png" />
+    <Content Include="Resources\Skin_MaximizeHot.png" />
+    <Content Include="Resources\Skin_MaximizePressed.png" />
+    <Content Include="Resources\Skin_Minimize.png" />
+    <Content Include="Resources\Skin_MinimizeDisabled.png" />
+    <Content Include="Resources\Skin_MinimizeHot.png" />
+    <Content Include="Resources\Skin_MinimizePressed.png" />
+    <Content Include="Resources\Skin_Restore.png" />
+    <Content Include="Resources\Skin_RestoreDisabled.png" />
+    <Content Include="Resources\Skin_RestoreHot.png" />
+    <Content Include="Resources\Skin_RestorePressed.png" />
+    <None Include="Resources\sortear_sel.png" />
+    <None Include="Resources\sortear_normal.png" />
+    <None Include="Resources\sortear_off.png" />
+    <None Include="Resources\sortear_over.png" />
+    <None Include="Resources\sortear_press.png" />
+    <Content Include="Resources\TEXIT.bmp" />
+    <Content Include="Resources\TFIND.bmp" />
+    <Content Include="Resources\TGOMA.bmp" />
+    <Content Include="Resources\TipoEquipo.png" />
+    <Content Include="Resources\TipoPersonal.png" />
+    <Content Include="Resources\TPRINT.bmp" />
+    <Content Include="Resources\UP.png" />
+    <Content Include="Resources\usrFuncion.png" />
+    <Content Include="Resources\usrFuncionHabilitada.png" />
+    <Content Include="Resources\usrFuncionNoHabilitada.png" />
+    <Content Include="Resources\usrRol.png" />
+    <None Include="Service References\WSExtractos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\WSExtractos\configuration.svcinfo" />
+    <None Include="Service References\WSExtractos\Service.disco" />
+    <None Include="Service References\WSExtractos\Service.xsd" />
+    <None Include="Service References\WSExtractos\Service1.xsd" />
+    <None Include="Service References\WSExtractos\Service2.xsd" />
+    <None Include="Service References\WSExtractos\ServicioExtracto.wsdl" />
+    <None Include="Web References\WSCAS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSCAS\WSCAS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSCAS\</RelPath>
+      <UpdateFromURL>http://172.24.72.179/cas/WS_sorteos_CAS/WSCAS.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SorteosCAS_WSCAS_Pgmsorteos</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WSExtractos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

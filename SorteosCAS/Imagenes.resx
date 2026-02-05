@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnMaximize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BtnMaximize.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premios_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\premios_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Producto.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FondoBoton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FondoBoton2.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Modificado.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagenBuscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ImagenBuscar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FondoBoton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FondoBoton.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premios_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\premios_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TFIND" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TFIND.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DELETE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DELETE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usrRol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\usrRol.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conSonido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\conSonido.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imp_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imp_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BolitasQuini4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BolitasQuini4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="engranajes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\engranajes.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_MinimizeDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_MinimizeDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_Minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_Minimize.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IconoError.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BordeInferior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BordeInferior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mascota_quini62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mascota_quini62.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PasoFabricacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PasoFabricacion.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_salir.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProcesoFabricacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ProcesoFabricacion.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_ingresar.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagenEjecutar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ImagenEjecutar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sortear_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sortear_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagenLimpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ImagenLimpiar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FondoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FondoLogin.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Interfaces_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Interfaces_press.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnMinimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BtnMinimize.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_RestorePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_RestorePressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BordeInferiorDerecho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BordeInferiorDerecho.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imp_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imp_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ckecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ckecked.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Interfaces_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Interfaces_off.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fin_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fin_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuadrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cuadrado.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BordeSupIzquierdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BordeSupIzquierdo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campovaloresHora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\campovaloresHora.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bordeInferiorIzquierdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bordeInferiorIzquierdo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campovaloresRepetido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\campovaloresRepetido.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_Restore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_Restore.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEXIT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TEXIT.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_MinimizePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_MinimizePressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechacostado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flechacostado.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_MaximizeHot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_MaximizeHot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoTipoEquipo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IconoTipoEquipo.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fin_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fin_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jur_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\jur_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jur_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\jur_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fin_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fin_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_RestoreDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_RestoreDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_CloseDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_CloseDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sortear_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sortear_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_ClosePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_ClosePressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Nuevo.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sin_Cambios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Sin Cambios.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imp_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imp_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoVacio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IconoVacio.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_ingresar_mouse_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_ingresar_mouse over.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jur_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\jur_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mensaje_Advertencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mensaje_Advertencia.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BtnClose.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inicio_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\inicio_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premios_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\premios_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icalicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\icalicon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoWaitCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IconoWaitCursor.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BordeLateral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BordeLateral.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\loading2.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuadradoseleccionado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cuadradoseleccionado.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCloseOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BtnCloseOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\calendario.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_CloseHot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_CloseHot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mensaje_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mensaje_Error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eliminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Eliminado.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoIniciomasbarras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fondoIniciomasbarras.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo1sinbarras4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fondo1sinbarras4.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_Maximize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_Maximize.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechacostadogris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flechacostadogris.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usrFuncionHabilitada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\usrFuncionHabilitada.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_Close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premios_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\premios_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_salir_mouse_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_salir_mouse over.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premios_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\premios_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CANCELAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CANCELAR.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BarraTitulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BarraTitulo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BordeSupDerecho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BordeSupDerecho.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProcesoFabricacionForaneo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ProcesoFabricacionForaneo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usrFuncionNoHabilitada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\usrFuncionNoHabilitada.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TipoPersonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TipoPersonal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoExtraccionesLoterias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fondoExtraccionesLoterias.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inicio_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\inicio_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resultset_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\resultset_next.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campovaloresValor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\campovaloresValor.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sortear_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sortear_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechaabajo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flechaabajo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fin_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fin_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botonOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\botonOver.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechaabajogris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flechaabajogris.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mensaje_Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mensaje_Info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TGOMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TGOMA.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_ingresar_seleccionado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_ingresar_seleccionado.GIF;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desconectar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\desconectar.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resultset_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\resultset_previous.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botonseleccionado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\botonseleccionado.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fin_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fin_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_MaximizePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_MaximizePressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo1sinbarras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fondo1sinbarras.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Interfaces_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Interfaces_normal.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SinSonido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SinSonido.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conectar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\conectar.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_MaximizeDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_MaximizeDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campovaloresHoraRepetido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\campovaloresHoraRepetido.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sortear_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sortear_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imp_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imp_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TPRINT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TPRINT.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoLiso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fondoLiso.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jur_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\jur_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnMinimizeOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BtnMinimizeOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pub_extension" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pub_extension.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inicio_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\inicio_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pub_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pub_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pub_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pub_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UP.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_MinimizeHot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_MinimizeHot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imp_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imp_press.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin_RestoreHot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Skin_RestoreHot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoLoteria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LogoLoteria.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DOWN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DOWN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campovalores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\campovalores.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoExtraccionesmasbarras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fondoExtraccionesmasbarras.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sortear_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sortear_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pub_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pub_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campovaloresValorRepetido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\campovaloresValorRepetido.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usrFuncion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\usrFuncion.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagenAceptar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ImagenAceptar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jur_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\jur_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IconoOk.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pub_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pub_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoEjecutar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IconoEjecutar.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\boton_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Interfaces_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Interfaces_over.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagenImprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ImagenImprimir.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inicio_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\inicio_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pub_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pub_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barraConcursoFinalizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\barraConcursoFinalizar.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnMaximizeOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BtnMaximizeOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mensaje_Pregunta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mensaje_Pregunta.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inicio_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\inicio_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoLisoConBarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fondoLisoConBarra.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

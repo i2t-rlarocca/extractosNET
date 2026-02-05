@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:wssorteosCAS" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:wssorteosCAS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:wssorteosCAS">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="DetalleLoterias">
+        <xsd:all>
+          <xsd:element name="idpgmsorteo" type="xsd:long" />
+          <xsd:element name="idloteria" type="xsd:long" />
+          <xsd:element name="nrosorteoloteria" type="xsd:long" />
+          <xsd:element name="fechaloteria" type="xsd:date" />
+          <xsd:element name="horaloteria" type="xsd:time" />
+          <xsd:element name="letra_loteria" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="DetalleArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:DetalleLoterias[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="pgmsorteos">
+        <xsd:all>
+          <xsd:element name="idpgmsorteo" type="xsd:long" />
+          <xsd:element name="idestado" type="xsd:long" />
+          <xsd:element name="idjuego" type="xsd:integer" />
+          <xsd:element name="nrosorteo" type="xsd:long" />
+          <xsd:element name="fechahora" type="xsd:datetime" />
+          <xsd:element name="fechaHoraPrescripcion" type="xsd:datetime" />
+          <xsd:element name="fechaHoraProximo" type="xsd:datetime" />
+          <xsd:element name="detalle" type="tns:DetalleArray" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getpgmsorteosRequest">
+    <wsdl:part name="fechahora" type="xsd:datetime" />
+  </wsdl:message>
+  <wsdl:message name="getpgmsorteosResponse">
+    <wsdl:part name="return" type="xsd:Array" />
+  </wsdl:message>
+  <wsdl:portType name="wssorteosCASPortType">
+    <wsdl:operation name="getpgmsorteos">
+      <wsdl:input message="tns:getpgmsorteosRequest" />
+      <wsdl:output message="tns:getpgmsorteosResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wssorteosCASBinding" type="tns:wssorteosCASPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getpgmsorteos">
+      <soap:operation soapAction="urn:wsi2t#getpgmsorteos" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:wsi2t" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:wsi2t" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wssorteosCAS">
+    <wsdl:port name="wssorteosCASPort" binding="tns:wssorteosCASBinding">
+      <soap:address location="http://www102.i2tsa.com.ar/WS_sorteos_CAS/wssorteosCAS.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
